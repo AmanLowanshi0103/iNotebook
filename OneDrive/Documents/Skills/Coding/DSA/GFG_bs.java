@@ -54,7 +54,6 @@ class Solution {
     }
     int bsearch(int[] arr,int l,int r,int k){
         int m=l+(r-l)/2;
-System.out.println("val"+m);
         if(l<=r){
         if(arr[m]==k){
             return m;
