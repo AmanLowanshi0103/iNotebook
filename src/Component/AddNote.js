@@ -21,11 +21,11 @@ function AddNote(props) {
     <h2>Create a New Note</h2>
     <form>
       <div className="mb-3 my-3">
-        <label htmlFor="exampleInputEmail1" className="form-label">Title</label>
+        <label htmlFor="Title" className="form-label">Title</label>
         <input type="text" className="form-control" id="Title" value={cNote.Title} name="Title" onChange={onChange}/>
       </div>
       <div className="mb-3">
-        <label htmlFor="exampleInputPassword1" className="form-label">Description</label>
+        <label htmlFor="Description" className="form-label">Description</label>
         <input type="text" className="form-control" id="Description" value={cNote.Description} name="Description" onChange={onChange}/>
       </div>
       <button disabled={cNote.Title.length<5|| cNote.Description.length<5} type="submit" className="btn btn-primary" onClick={handleOnClick}>Create Note</button>

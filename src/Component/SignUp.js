@@ -35,19 +35,19 @@ const SignUp = (props) => {
   return (
     <>
   <form onSubmit={handleOnSubmit}>
-  <div class="mb-3">
-    <label for="fullName" class="form-label">Full Name</label>
-    <input type="text" onChange={(e) => setFullName(e.target.value)} class="form-control" id="fullName" name="fullName" aria-describedby="emailHelp"/>
+  <div className="mb-3">
+    <label htmlFor="fullName" className="form-label">Full Name</label>
+    <input data-testid="fullName" type="text" onChange={(e) => setFullName(e.target.value)} className="form-control" id="fullName" name="fullName" aria-describedby="emailHelp"/>
   </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Email address</label>
-    <input type="email" onChange={(e) => setEmail(e.target.value)} class="form-control" id="email" name="email" aria-describedby="emailHelp"/>
+  <div className="mb-3">
+    <label htmlFor="email" className="form-label">Email address</label>
+    <input data-testid="email"  type="email" onChange={(e) => setEmail(e.target.value)} className="form-control" id="email" name="email" aria-describedby="emailHelp"/>
   </div>
-  <div class="mb-3">
-    <label for="password" class="form-label">Password</label>
-    <input type="password" onChange={(e) => setPassword(e.target.value)} class="form-control" id="password" name="password" />
+  <div className="mb-3">
+    <label htmlFor="password" className="form-label">Password</label>
+    <input data-testid='password' type="password" onChange={(e) => setPassword(e.target.value)} className="form-control" id="password" name="password" />
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" className="btn btn-primary">Submit</button>
   </form>
     </>
   )
