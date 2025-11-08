@@ -15,5 +15,15 @@ export default {
     "!src/reportWebVitals.{js,jsx,ts,tsx}"
   ],
   coverageDirectory: "coverage",
-  coverageReporters: ["text", "lcov", "html"]
+  coverageReporters: ["text", "lcov", "html"],
+
+  // 👇 Add this section
+  coverageThreshold: {
+    global: {
+      branches: 60,
+      functions: 70,
+      lines: 70,
+      statements: 70
+    }
+  }
 };

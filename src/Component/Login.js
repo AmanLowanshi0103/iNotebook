@@ -27,20 +27,20 @@ function Login(props) {
         }
       else
       {
-        props.showAlert(" Invalid Login Credentials","danger")
+        props.showAlert(" Invalid Login Credentials","danger")``
       }
     }
   return (<>
     <form onSubmit={handleSubmit}>
-      <div class="mb-3 my-2">
-        <label htmlFor="email" class="form-label">Email address</label>
-        <input onChange={(e) => setEmail(e.target.value)} type="email" class="form-control" id="email"  aria-describedby="emailHelp"/>
+      <div className="mb-3 my-2">
+        <label htmlFor="email" className="form-label">Email address</label>
+        <input onChange={(e) => setEmail(e.target.value)} type="email" className="form-control" id="email"  aria-describedby="emailHelp"/>
       </div>
-      <div class="mb-3">
-        <label htmlFor="password" class="form-label">Password</label>
-        <input onChange={(e) => setPassword(e.target.value)} type="password" class="form-control" id="password" name='password'/>
+      <div className="mb-3">
+        <label htmlFor="password" className="form-label">Password</label>
+        <input onChange={(e) => setPassword(e.target.value)} type="password" className="form-control" id="password" name='password'/>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" className="btn btn-primary">Submit</button>
     </form>
   </>
   )
